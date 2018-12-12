@@ -10,17 +10,33 @@
     <url-pattern>/loginServlet</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>logoutServlet</servlet-name>
-  	<servlet-class>org.tutorial.servlets.LogoutServlet</servlet-class>
+    <servlet-name>logoutServlet</servlet-name>
+    <servlet-class>org.tutorial.servlets.LogoutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>logoutServlet</servlet-name>
-  	<url-pattern>/logout</url-pattern>
+    <servlet-name>logoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
   </servlet-mapping>
- <error-page>
+  <servlet>
+    <servlet-name>addAthleteServlet</servlet-name>
+    <servlet-class>org.tutorial.servlets.AddAthleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addAthleteServlet</servlet-name>
+    <url-pattern>/addAthlete</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>addAthleteAndPalmaresServlet</servlet-name>
+    <servlet-class>org.tutorial.servlets.AddAthleteAndPalmaresServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addAthleteAndPalmaresServlet</servlet-name>
+    <url-pattern>/addAthleteAndPalmares</url-pattern>
+  </servlet-mapping>
+  <error-page>
     <error-code>404</error-code>
     <location>/erreur/errorPage.jsp</location>
- </error-page> 
+  </error-page>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

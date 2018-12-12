@@ -10,7 +10,8 @@
  	  if(session.getAttribute("username") != null){ 
 	  String name =(String)session.getAttribute("username");%> 
 	  Hello <%=name %> 
-	  <form action="../logout" method="post">
+	  <a href="../addAthlete">Ajout athlete</a>
+	  <form action="/JO/logout" method="post">
 	  	<input type="submit" value="déconnexion" class="btn btn-primary">
 	  </form>
 	  

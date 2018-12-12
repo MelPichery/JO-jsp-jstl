@@ -11,6 +11,7 @@ public class Palmares
 		this.discipline = discipline;
 	}
 
+	
 	public EMedaille getMedaille() {
 		return medaille;
 	}
@@ -19,6 +20,5 @@ public class Palmares
 		return discipline;
 	}
 
-	
 	
 }

@@ -6,6 +6,11 @@ public class Athlete
 	private String nom = null;
 	private ArrayList<Palmares> listePalmares = null;
 	
+	public ArrayList<Palmares> getListePalmares() {
+		return listePalmares;
+	}
+
+
 	public Athlete(String nom)
 	{
 		super();
